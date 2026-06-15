@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Welcome.md",
+                "file": "Untitled.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Welcome"
+              "title": "Untitled"
             }
           }
         ]
@@ -186,8 +186,10 @@
   },
   "active": "660e9c5594f5bd53",
   "lastOpenFiles": [
+    "Welcome.md",
+    "Untitled.md",
+    "notebook.ipynb",
     "Untitled.canvas",
-    "Untitled.base",
-    "Welcome.md"
+    "Untitled.base"
   ]
 }
