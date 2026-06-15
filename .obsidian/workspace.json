@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Welcome.md",
+                "file": "xzXz.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Welcome"
+              "title": "xzXz"
             }
           }
         ]
@@ -186,11 +186,12 @@
   },
   "active": "c5f7f0dbd34dfe2f",
   "lastOpenFiles": [
-    "demo.ipynb.md",
-    "demo.ipynb",
     "Welcome.md",
-    "Untitled.base",
+    "xzXz.md",
     "notebook.ipynb",
+    "demo.ipynb",
+    "demo.ipynb.md",
+    "Untitled.base",
     "Untitled.canvas"
   ]
 }
