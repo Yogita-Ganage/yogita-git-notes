@@ -1,4 +1,8 @@
-config_df = spark.read.options(header=True, delimiter=",").csv("Files/bronze_Control_file_prod.csv")
+from pyspark.sql.functions import lower, col
 
-config_df.printSchema()
-display(config_df.limit(20))
+display(
+    config_df.filter(
+        (lower(col("source_system")) == "drj") |
+        (lower(col("tablename")).contains("user"))
+    )
+)
