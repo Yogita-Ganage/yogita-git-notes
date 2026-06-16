@@ -1,8 +1,9 @@
-from pyspark.sql.functions import lower, col
+landing_path = "Files/landing/DRJ/Users*.csv"
 
-drj_users_config = config_df.filter(
-    (lower(col("sourcesystem")) == "drj") &
-    (lower(col("tablename")) == "users")
-)
+df_users_landing = spark.read.options(
+    header=True,
+    delimiter=",",
+    inferSchema=True
+).csv(landing_path)
 
-display(drj_users_config)
+print(df_users_landing.columns)
