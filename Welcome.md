@@ -11,3 +11,17 @@ Option 1: ALTER TABLE bronze_drj_users ADD COLUMN episodeNumber STRING
 Option 2: Drop/recreate bronze_drj_users from source
 
 Option 3: Enable schema evolution/mergeSchema in Bronze load logic
+
+  
+  
+  
+
+Yesterday I investigated the missing episodeNumber column for DRJ Users. I checked Silver and Bronze first, then traced it back to the Bronze load process. I found that the latest DRJ Users landing file does contain episodeNumber, but it is not coming through into bronze_drj_users.
+
+  
+
+Today I’ll continue checking the Bronze load/schema handling in the test folder to understand why the new column is not being reflected in the Bronze table. Before making any final change, I’ll confirm the approach with you.
+
+  
+
+will create test table first when you approve we can move to prduction then i can start with attribute
