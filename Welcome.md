@@ -6,12 +6,17 @@ df_users_file = spark.read.options(
     inferSchema=True
 ).csv(users_file_path)
 
+print(len(df_users_file.columns))
+print(df_users_file.columns)
+
 sample_df = df_users_file.limit(100)
 
-sample_df.write.format("delta") \
-    .mode("overwrite") \
-    .option("overwriteSchema", "true") \
+(
+    sample_df.write.format("delta")
+    .mode("overwrite")
+    .option("overwriteSchema", "true")
     .saveAsTable("test_bronze_drj_users_sample_100")
+)
 
 
 
