@@ -30,3 +30,8 @@ SELECT episodeNumber
 FROM test_bronze_drj_users_sample_100
 WHERE episodeNumber IS NOT NULL
 LIMIT 20;
+
+
+
+
+I tested the latest DRJ Users landing file using the correct pipe delimiter. The sample test Bronze table was created successfully and episodeNumber is present in the schema. However, episodeNumber is still missing from the actual bronze_drj_users table, so the issue appears to be with the existing Bronze table schema/load handling rather than the source file.
